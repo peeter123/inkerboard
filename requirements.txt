@@ -1,0 +1,11 @@
+## Python requirements for using the inkerboard application.
+##
+##   pyhon -m pip install --requirement=requirements.txt
+##
+wheel
+Pillow
+python-dotenv>=0.12
+PyYAML>=3.11
+
+setuptools~=50.3.0
+pyserial~=3.4

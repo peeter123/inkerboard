@@ -1,0 +1,35 @@
+## Runtime configuration for the inkerboard application.
+core:
+  logging: WARN
+
+display:
+  width: 800
+  height: 600
+
+# Settings for dashboard generation
+generate:
+    interval: 60 # Seconds
+    modules: # Calendar, Date, Empty, PVOutput
+      - 'Date'
+      - 'PVOutput'
+      - 'Calendar'
+      - 'Empty'
+
+# Module specific settings
+modules:
+  calendar:
+    firstweekday: 0 # Monday = 0
+    showmonth: False
+  pvoutput:
+    api_key: 'xxxx'
+    system_id: 12345
+    timezone: 'Europe/Amsterdam'
+    donate: True
+    show:
+      generation: True
+      consumption: True
+      gas: True
+      water: True
+    extended:
+      gas: 'v11'
+      water: 'v8'
